@@ -15,6 +15,7 @@ body {
 
 /* 包装器 */
 .wrapper {
+	display: none;
 	margin: 0;
 	position: absolute;
 }

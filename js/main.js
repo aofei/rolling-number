@@ -60,10 +60,12 @@ function init() {
 
 // 定位 Wrapper
 function fixWrapper() {
+	$(".wrapper").hide();
 	$(".wrapper").css({
 		left: ($(window).width() - $(".wrapper").outerWidth()) / 2,
-		top: ($(window).height() - $(".wrapper").outerHeight()) / 2 + $(document).scrollTop()
+		top: ($(window).height() - $(".wrapper").outerHeight()) / 2 + $(document).scrollTop(),
 	});
+	$(".wrapper").show();
 }
 
 // 将结果数值区域的字体颜色变成绿色
