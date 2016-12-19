@@ -1,0 +1,70 @@
+body {
+	background-color: #fdfdfd;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+
+/* 包装器 */
+.wrapper {
+	margin: 100px 0;
+}
+
+/* 提示 */
+.hint {
+	color: #40aa53;
+}
+
+/* 结果区域 */
+.result {
+	background: #efe;
+	border: 3px solid #40aa53;
+	margin: 0 auto;
+	padding: 60px 0;
+	text-align: center;
+	width: 800px;
+}
+
+/* 结果数值 */
+.result-number {
+	font-size: 10em;
+}
+
+/* 绿色的结果数值 */
+.result-number.green {
+	color: #40aa53;
+}
+
+/* 红色的结果数值 */
+.result-number.red {
+	color: red;
+}
+
+/* 使用说明 */
+.manual {
+	color: #828282;
+	margin: 0 auto;
+	text-align: left;
+	width: 800px;
+}
+
+.manual p {
+	margin: 20px 0 10px;
+}
+
+.manual ul {
+	margin: 0;
+}
+
+/* Copy */
+.copy {
+	color: #828282;
+	font-size: .8em;
+}
+
+/* 移动设备下的样式 */
+@media screen and (max-width: 800px) {
+	.result, .manual {
+		width: 80%;
+	}
+}
