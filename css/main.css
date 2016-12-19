@@ -1,13 +1,22 @@
 body {
-	background-color: #fdfdfd;
+	background-color: #000;
 	margin: 0;
 	padding: 0;
 	text-align: center;
 }
 
+/* 矩阵 */
+#matrix {
+	left: 0;
+	position: absolute;
+	top: 0;
+	z-index: -1;
+}
+
 /* 包装器 */
 .wrapper {
-	margin: 100px 0;
+	margin: 0;
+	position: absolute;
 }
 
 /* 提示 */
@@ -17,7 +26,6 @@ body {
 
 /* 结果区域 */
 .result {
-	background: #efe;
 	border: 3px solid #40aa53;
 	margin: 0 auto;
 	padding: 60px 0;
@@ -42,7 +50,8 @@ body {
 
 /* 使用说明 */
 .manual {
-	color: #828282;
+	color: #40aa53;
+	font-size: .8em;
 	margin: 0 auto;
 	text-align: left;
 	width: 800px;
@@ -58,7 +67,7 @@ body {
 
 /* Copy */
 .copy {
-	color: #828282;
+	color: #40aa53;
 	font-size: .8em;
 }
 

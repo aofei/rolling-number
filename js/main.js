@@ -4,12 +4,18 @@ var g_Interval = 1; // 翻滚的时间间隔（毫秒）
 var rolling = false; // 是否正在翻滚
 
 // 当页面准备好时
-$(document).ready(function () {  
+$(document).ready(function() {  
 	init();
+	fixWrapper();
+});
+
+// 当调整窗体尺寸时
+$(window).resize(function() {
+	fixWrapper();
 });
 
 // 响应各种按键事件
-$(document).keydown(function (e) {
+$(document).keydown(function(e) {
 	if (!e) {
 		var e = window.event; 
 	}
@@ -50,6 +56,14 @@ function init() {
 	$(".hint").html("翻滚数（1 - " + g_Counts + "）");
 	$(".result-number").html(0);
 	greenResultNumber();
+}
+
+// 定位 Wrapper
+function fixWrapper() {
+	$(".wrapper").css({
+		left: ($(window).width() - $(".wrapper").outerWidth()) / 2,
+		top: ($(window).height() - $(".wrapper").outerHeight()) / 2 + $(document).scrollTop()
+	});
 }
 
 // 将结果数值区域的字体颜色变成绿色
