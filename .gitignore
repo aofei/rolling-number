@@ -1,0 +1,11 @@
+# macOS
+.DS_Store
+
+# Visual Studio
+Debug/
+ipch/
+*.suo
+*.use
+*.opensdf  
+*.sdf
+*.aps
